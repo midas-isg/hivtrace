@@ -2,8 +2,10 @@ language: python
 branches:
 only:
   - master
+  - exp-travis
 python:
   - "3.5"
+  - "3.6"
 
 cache:
   directories:
@@ -38,9 +40,10 @@ script:
 notifications:
     email:
         recipients:
-            - steven@stevenweaver.org
-            - jwertheim@ucsd.edu
-            - spond@temple.edu
+             - saw111@pitt.edu
+#            - steven@stevenweaver.org
+#            - jwertheim@ucsd.edu
+#            - spond@temple.edu
         on_success: change
         on_failure: always
 
